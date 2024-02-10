@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Funngro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35766302e4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        .flip-container {
+        perspective: 1000px;
+        width: 200px;
+        height: 300px;
+        position: relative;
+    }
+
+    .flip-container:hover .flipper {
+        transform: rotateX(180deg);
+    }
+
+    .flipper {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .front,
+    .back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+
+    .front {
+        background-color: #3498db;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back {
+        background-color: #e74c3c;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateX(180deg);
+    }
+
+    .text {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img id="img_div"
+                src="assets/logo/gurukulyog-high-resolution-logo-black-transparent.png"
+                alt="oops">
+            <ul class="nav-menu">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">WorkShop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="phonepe.php">
+                    <button class="btn" type="submit">Enroll NOW/₹299
+                        <img src="assets/user.png" alt="user">
+                    </button>
+                </a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="main-heading">
+        <div class="section-img">
+            <div class="slider">
+                <img id="slide1" class="img-slider" src="assets/images/diabetes1.jpg" alt="slide1">
+                <div class="text-img">
+                    <h4 id="textImg">Take Control of You Diabetes</h4>
+                    <p>Join Our Online Workshop!</p>
+                </div>
+                <img id="slide2" class="img-slider" src="assets/images/diabetes2.jpg" alt="slide2">
+                <div class="text-img">
+                    <h4 id="textImg">Empowering you to manage diabetes and live a healthy life</h4>
+                    <p>Join us today!
+                    </p>
+                </div>
+                <img id="slide3" class="img-slider" src="assets/images/diabetes3.jpg" alt="slide3">
+                <div class="text-img">
+                    <h4 id="textImg">Diabetes is all about managing your lifestyle, not just your blood sugar.</h4>
+                    <p>Join us right away!</p>
+                </div>
+            </div>
+            <div class="nav-slide">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+            </div>
+        </div>
+    </section>
+    <section class="project-categories">
+        <div class="item-head upperText">
+            <h2 class="project-head">You will learn in this workshop</h2>
+            <div id="upperTextBox"></div>
+            <div class="textBox">
+                <h3 class="category-head">Living with diabetes is not a limitation, but an opportunity to live healthier and stronger.</h3>
+                <p class="category-content">-Raviteja</p>
+            </div>
+            <div class="line inside"></div>
+        </div>
+
+        <div class="item upperText">
+            <img src="assets/education.png" alt="social media marketing">
+            <h4>Education</h4>
+            <div id="upperTextBox"></div>
+            <div class="textBox">
+                <h3 class="fitContent">Comprehensive education on diabetes management</h3>
+            </div>
+            <div class="line inside"></div>
+        </div>
+
+        <div class="item upperText">
+            <img src="assets/pencil.png" alt="social media marketing">
+            <h4>Practicals</h4>
+            <div id="upperTextBox"></div>
+            <div class="textBox">
+                <h3 class="fitContent">Practical tips for maintaining stable blood sugar levels permanently</h3>
+            </div>
+            <div class="line inside"></div>
+        </div>
+
+        
+
+        
+
+        <div class="item upperText">
+            <img src="assets/developing.png" alt="Influencer Marketing">
+            <h4>Strategies</h4>
+            <div id="upperTextBox"></div>
+            <div class="textBox">
+                <h3 class="fitContent">Personalized strategies for a balanced lifestyle</h3>
+
+            </div>
+            <div class="line inside"></div>
+        </div>
+
+        <div class="item upperText">
+            <img src="assets/health.png" alt="Voice Over">
+            <h4>Lifestyle</h4>
+            <div id="upperTextBox"></div>
+            <div class="textBox">
+                <h3 class="fitContent">Amazing lifestyle guide on Sugar</h3>
+            </div>
+            <div class="line inside"></div>
+        </div>
+
+        <div class="item upperText">
+            <img src="assets/yoga.png" alt="Research & Survey">
+            <h4>Yoga</h4>
+            <div id="upperTextBox"></div>
+            <div class="textBox">
+                <h3 class="fitContent">Yoga tips and technique to maintain Diabetese</h3>
+
+            </div>
+            <div class="line inside"></div>
+        </div>
+
+        
+
+        <div class="item upperText">
+            <img src="assets/fasting.png" alt="Graphics Design">
+            <h4>Dietary Choices</h4>
+            <div id="upperTextBox"></div>
+            <div class="textBox">
+                <h3 class="fitContent">Guidance on making informed dietary choices</h3>
+
+            </div>
+            <div class="line inside"></div>
+        </div>
+
+        <div class="item upperText">
+            <img src="assets/sugar-blood-level.png" alt="Data Entry">
+            <h4>Natural Sources</h4>
+            <div id="upperTextBox"></div>
+            <div class="textBox">
+                <h3 class="fitContent">Natural Sources to maintain sugar level.</h3>
+
+            </div>
+            <div class="line inside"></div>
+        </div>
+
+    </section>
+
+    <section id="img-text">
+              <h1>About Coach Inderjeet Tomar</h1>
+        <div class="container">
+    <div class="row1">
+      <p>8+ Years of experience.</p>
+      <p>Diploma In Yoga trainer from MDNIY (New Delhi)</p>
+      <p>Certified In Yoga Teacher (MHRD).</p>
+      <p>Recognized as an International Wellness Coach with accreditation from DYTED</p>
+      <p>1000+ Healing Diabetic Patent.</p>
+      <p>Power Yoga Instructors of many Gold Medalist Students.</p>
+      <p>Participated In Program “Outstanding Contribution Toward Promotion And Development of Yoga” By Prime Minister Shri Narendra Modi Ji.</p>
+      <p>Successfully contributed to the well-being of over 5000 individuals by specializing in healing practices for Various Diseases.</p>
+    </div>
+    <div class="row2">
+        <img src="assets/images/people.jpg">
+    </div>
+</div>
+
+  
+    </section>
+
+    <section class="content-header" id="content-header">
+        <h2 id="heading">Workshop Highlights:</h2>
+        <h4 id="para">Diabetes is a journey, not a destination. It's about learning, adapting, and growing stronger every day.</h4>
+    </section>
+
+    <section class="test">
+        <div class="one common" id="common">
+            <img class="first" src="assets/classroom.png" alt="Avatar">
+            <p class="text">Expert-led sessions on understanding diabetes</p>
+            
+        </div>
+        <div class="two common" id="common">
+            <img class="second" src="assets/food.png" alt="passion">
+            <p class="text">Customized meal planning and simple yoga guidance</p>
+        </div>
+        <div class="three common" id="common">
+            <img class="third" src="assets/passion.png" alt="online-learning">
+            <p class="text">Practical tools for monitoring and managing blood sugar</p>
+        </div>
+        <div class="four common" id="common">
+            <img class="fourth" src="assets/laptop.png" alt="certificate">
+            <p class="text">Simple yoga technique and guidance</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <symbol viewBox="0 0 24 24" id="expand-more">
+                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                </symbol>
+                <symbol viewBox="0 0 24 24" id="close">
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                </symbol>
+            </svg>
+        </div>
+
+        <details open>
+            <summary>
+                What are the common symptoms of diabetes?
+                <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                </svg>
+                <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                </svg>
+            </summary>
+            <p>Common symptoms of diabetes include frequent urination, excessive thirst, unexplained weight loss, increased hunger, fatigue, blurred vision, slow-healing sores or frequent infections.</p>
+            
+        </details>
+
+        <details>
+
+            <summary>
+                What are the risk factors for developing diabetes?
+                <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                </svg>
+                <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                </svg>
+            </summary>
+            <p>Risk factors for diabetes include family history of diabetes, overweight or obesity, sedentary lifestyle, unhealthy diet, high blood pressure, high cholesterol levels, and certain ethnicities.</p>
+        </details>
+
+        <details>
+            <summary>
+                Are there any advancements in diabetes treatment?
+                <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                </svg>
+                <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                </svg>
+            </summary>
+            <p>Yes, there are ongoing advancements in diabetes treatment including new medications, insulin delivery systems, continuous glucose monitoring (CGM) devices, and artificial pancreas systems, aimed at improving diabetes management and quality of life.
+
+            </p>
+        </details>
+    </section>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>
+                <img id="logo-img" src="assets/logo/gurukulyog-high-resolution-logo-black-transparent.png"
+                    loading="lazy" alt="" class="footer-logo" />
+            </h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Blogs</a>
+
+                <a href="#">FAQs</a>
+
+                <a href="#">Careers</a>
+
+                <a href="#">Contact</a>
+
+                <a href="#">Subscribe</a>
+            </p>
+
+            <p class="footer-company-name">GURUKULYOG © 2024</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <p class="store"><span class="app">Download Our APP</span></p>
+            </div>
+
+            <div class="play" id="play">
+                <i class="fa-brands fa-google-play"></i>
+                <i class="fa-brands fa-app-store-ios"></i>
+            </div>
+
+
+
+        </div>
+
+        <div class="footer-right">
+
+            <div class="footer-company-about">
+                <a href="#" class="conditionsList">Privacy Policy</a>
+                <a href="#" class="conditionsList">Terms & Conditions</a>
+            </div>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
